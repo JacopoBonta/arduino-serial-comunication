@@ -9,6 +9,7 @@ private:
     HANDLE hname;
 public:
     Ascom();
+    Ascom(char *str);
     ~Ascom();
     bool Ccontrol();
     void Write(char *buf);
@@ -22,6 +23,11 @@ Ascom operator >> (Ascom _COM, char* str);
 Ascom::Ascom()
 {
     hname=CreateFile("COM6",GENERIC_READ|GENERIC_WRITE,0,NULL,OPEN_EXISTING,0,0);
+}
+
+//Parametrized Constructor
+Ascom::Ascom(char *str) {
+	hname = CreateFile("COM6", GENERIC_READ|GENERIC_WRITE, 0, NULL, OPEN_EXISTING, 0, 0);
 }
 
 //Destructor: closes the door
