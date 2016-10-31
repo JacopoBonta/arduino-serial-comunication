@@ -27,7 +27,7 @@ Ascom::Ascom()
 
 //Parametrized Constructor
 Ascom::Ascom(char *str) {
-	hname = CreateFile("COM6", GENERIC_READ|GENERIC_WRITE, 0, NULL, OPEN_EXISTING, 0, 0);
+	hname = CreateFile(str, GENERIC_READ|GENERIC_WRITE, 0, NULL, OPEN_EXISTING, 0, 0);
 }
 
 //Destructor: closes the door
