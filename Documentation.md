@@ -1,1 +1,1 @@
-Write some things that explains the work
+This library is delivered using the GPL license
