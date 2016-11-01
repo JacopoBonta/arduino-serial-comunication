@@ -1,1 +1,1 @@
-This library is delivered using the GPL license
+This library is delivered under the GPL license
