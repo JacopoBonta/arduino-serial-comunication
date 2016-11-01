@@ -1,1 +1,1 @@
-Write some things that explains the work
+This library is relased under the GPLv3 license.
