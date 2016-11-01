@@ -1,1 +1,1 @@
-This library is delivered using the GPL license
+This library is released under the GPLv3 license.
